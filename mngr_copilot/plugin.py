@@ -21,7 +21,7 @@ from imbue.mngr.interfaces.data_types import FileTransferSpec
 from imbue.mngr.interfaces.host import CreateAgentOptions
 from imbue.mngr.interfaces.host import OnlineHostInterface
 from imbue.mngr.primitives import CommandString
-from imbue.mngr_copilot import hookimpl
+from mngr_copilot import hookimpl
 
 # Keychain service name used by the Copilot CLI (via keytar).
 _COPILOT_KEYCHAIN_SERVICE: str = "copilot-cli"
