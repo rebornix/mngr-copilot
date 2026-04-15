@@ -10,6 +10,23 @@ This plugin registers the `copilot` agent type, which runs the Copilot CLI in a 
 - Automatic syncing of GitHub OAuth tokens from your local machine to remote hosts
 - macOS keychain support (reads stored tokens and writes them as plaintext for remote hosts)
 
+## Installation
+
+```bash
+# Install from this repo
+mngr plugin add --git https://github.com/rebornix/mngr-copilot.git
+
+# Or install from a local clone
+git clone https://github.com/rebornix/mngr-copilot.git
+mngr plugin add --path ./mngr-copilot
+```
+
+Verify the plugin is active:
+
+```bash
+mngr plugin list | grep copilot
+```
+
 ## Prerequisites
 
 The Copilot CLI must be installed and available as `copilot` in the agent's PATH. Follow the [Copilot CLI installation guide](https://docs.github.com/en/copilot/how-tos/set-up/install-copilot-cli) to set it up.
